@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Administrators",
+    "permissions": [
+      "manage:system"
+    ],
+    "pageRules": [],
+    "isSystem": true,
+    "createdAt": "2023-02-10T10:58:38.395Z",
+    "updatedAt": "2023-02-10T10:58:38.395Z",
+    "redirectOnLogin": "/"
+  },
+  {
+    "id": 2,
+    "name": "Guests",
+    "permissions": [
+      "read:pages",
+      "read:assets",
+      "read:comments"
+    ],
+    "pageRules": [
+      {
+        "id": "guest",
+        "roles": [
+          "read:pages",
+          "read:assets",
+          "read:comments"
+        ],
+        "match": "START",
+        "deny": false,
+        "path": "",
+        "locales": []
+      }
+    ],
+    "isSystem": true,
+    "createdAt": "2023-02-10T10:58:38.398Z",
+    "updatedAt": "2023-02-10T10:58:38.398Z",
+    "redirectOnLogin": "/"
+  }
+]
